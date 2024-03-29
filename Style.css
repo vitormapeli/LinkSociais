@@ -1,0 +1,126 @@
+@font-face {
+    font-family: InterBold; /* Escolha um nome para a sua fonte */
+    src: url('assets/fonts/static/Inter-Bold.ttf'); /* Substitua o caminho pelo local onde você colocou o arquivo da fonte */
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: InterRegular; /* Escolha um nome para a sua fonte */
+    src: url('assets/fonts/static/Inter-Regular.ttf'); /* Substitua o caminho pelo local onde você colocou o arquivo da fonte */
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: InterSemiBold; /* Escolha um nome para a sua fonte */
+    src: url('assets/fonts/static/Inter-SemiBold.ttf'); /* Substitua o caminho pelo local onde você colocou o arquivo da fonte */
+    font-weight: 600;
+ 
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body p{
+    Font-size: 14px
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%);
+    padding: 30px 30px;
+    border-radius: 15px;
+    width: 16%;
+}
+
+.sectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgPerfil{
+    border-radius: 50%;
+}
+
+.h1Nome{
+    font-family: InterBold, sans-serif;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.pEndereco{
+    font-family: InterSemiBold, sans-serif;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pTrabalho{
+    font-family: InterRegular, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sectionButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sectionButtons button{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-family: InterSemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s; 
+    width: 100%;
+}
+
+.sectionButtons button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: white;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    main{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+     
+    main{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+     
+    main{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px ) and (max-width: 1279px) {
+     
+    main{
+        width: 40%;
+    }
+}
